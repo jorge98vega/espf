@@ -1,3 +1,7 @@
+# Imports
+
+import numpy as np
+
 # Functions
 
 def create_bondi_radii():
@@ -48,4 +52,8 @@ def create_bondi_radii():
 # Constants
 
 BONDI_RADII = create_bondi_radii()
-Debye = 0.2081943 # eÅ
+# https://en.wikipedia.org/wiki/Debye
+debye = 0.2081943 # eÅ
+# https://en.wikipedia.org/wiki/Vacuum_permittivity
+eps0 = 55.26349406e-4 # e/V/Å
+ke = 1/(4*np.pi*eps0) # VÅ/e
