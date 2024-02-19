@@ -1,6 +1,7 @@
 # Imports
 
 import numpy as np
+import time
 
 # Functions
 
@@ -48,17 +49,14 @@ def read_xsf(filename):
     with open(filename) as f:
         for i in range(14): next(f) # Ignore first 14 lines
         line = f.readline()
-        data = line.split()
-        Npoints = np.array(data, dtype=int)
+        Npoints = np.array(line.split(), dtype=int)
 
         line = f.readline()
-        data = line.split()
-        origin = np.array(data, dtype=float)
-
-        lines = [line for line in f][:3]
-        for line in lines:
-            data = line.split()
-            lvs.append(np.array(data, dtype=float))
+        origin = np.array(line.split(), dtype=float)
+        
+        for i in range(3):
+            line = f.readline()
+            lvs.append(np.array(line.split(), dtype=float))
 
     data = np.genfromtxt(filename, dtype=float, skip_header=19, skip_footer=2)
     pots1d = -data
