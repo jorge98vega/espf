@@ -6,11 +6,36 @@ import constants
 
 # Functions
 
+def center_coordinates(rs):
+    com = np.zeros(3)
+    for r in rs:
+        com = com + r
+    com = com/len(rs)
+    return rs - com
+
+
 def compute_dipole(rqs, qs, debye=True):
     p = np.dot(qs, rqs)
     if debye:
         p = p/constants.debye # eÅ to D
     return p
+
+
+def dipole2charges(rp, p, q=None, d=None):
+    if q is not None and d is not None:
+        raise Exception("q & d are mutually exclusive")
+
+    if q is not None:
+        q = np.abs(q)
+        d = np.linalg.norm(p)/q
+    if d is not None:
+        d = np.abs(d)
+        q = np.linalg.norm(p)/d
+
+    up = p/np.linalg.norm(p)
+    rqs = np.array([rp - 0.5*d*up, rp + 0.5*d*up])
+    qs = np.array([-q, q])
+    return rqs, qs
 
 
 def compute_espcharges(Rs, rs, Vs, Q=0.0):

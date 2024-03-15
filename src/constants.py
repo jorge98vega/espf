@@ -51,7 +51,7 @@ def create_bondi_radii():
 
 # Constants
 
-BONDI_RADII = create_bondi_radii()
+BONDI_RADII = create_bondi_radii() # Å
 # https://en.wikipedia.org/wiki/Debye
 debye = 0.2081943 # eÅ
 # https://en.wikipedia.org/wiki/Vacuum_permittivity
