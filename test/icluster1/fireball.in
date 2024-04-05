@@ -1,0 +1,25 @@
+&OPTION
+fdatalocation = "/home/jorge/FB/charges/runs/HCNOF_test/Fdata"
+nstepf = 1
+iquench = -1
+icluster = 1
+iqout = 7
+qstate = 0
+dt = 0.5
+idipole = 1
+iks = 1
+imcweda = 0
+idogs = 0
+bmix = 0.04
+verbosity = 1
+&END
+&OUTPUT
+iwrtxyz = 1
+iwrtdipole = 2
+iwrtcharges = 4
+iwrtxsf = 1
+&END
+&MESH
+Ecut = 4.0d0 ! points in each grid directon with icluster = 1: ~ Ecut * avec
+droff = 1.0d0
+&END

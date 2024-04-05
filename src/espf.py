@@ -6,6 +6,7 @@ import constants
 
 # Functions
 
+
 def center_coordinates(rs):
     com = np.zeros(3)
     for r in rs:
@@ -21,9 +22,12 @@ def compute_dipole(rqs, qs, debye=True):
     return p
 
 
-def dipole2charges(rp, p, q=None, d=None):
+def dipole2charges(rp, p, q=None, d=None, debye=True):
     if q is not None and d is not None:
         raise Exception("q & d are mutually exclusive")
+
+    if debye:
+        p = p*constants.debye # D to eÅ
 
     if q is not None:
         q = np.abs(q)
@@ -64,6 +68,10 @@ def compute_espcharges(Rs, rs, Vs, Q=0.0):
 
 
 def pointcharges_espf(rqs, qs, rs, volt=True):
+    if np.ndim(qs) == 0:
+        rqs = rqs.reshape(1, -1)
+        qs = np.array([qs])
+
     espf = np.array([np.sum(qs/np.linalg.norm(r - rqs, axis=1)) for r in rs])
     if volt:
         espf = espf*constants.ke # e/Å to V
@@ -71,6 +79,10 @@ def pointcharges_espf(rqs, qs, rs, volt=True):
 
 
 def dipoles_espf(rps, ps, rs, debye=True, volt=True):
+    if np.ndim(ps) == 1:
+        rps = rps.reshape(1, -1)
+        ps = ps.reshape(1, -1)
+
     if debye:
         ps = ps*constants.debye # D to eÅ
     espf = np.array([np.sum(np.sum(ps*(r - rps), axis=1)/np.linalg.norm(r - rps, axis=1)**3) for r in rs])

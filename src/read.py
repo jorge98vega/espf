@@ -1,9 +1,9 @@
 # Imports
 
 import numpy as np
-import time
 
 # Functions
+
 
 def read_coordinates(filename):
     Zs = []

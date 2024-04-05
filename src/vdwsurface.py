@@ -5,6 +5,7 @@ import constants
 
 # Functions
 
+
 def dotsphere(radius, density):
     # M. Deserno (2004). "How to generate equidistributed points on the surface of a sphere". https://www.cmu.edu/biolphys/deserno/pdf/sphere_equi.pdf
     Ncount = 0
