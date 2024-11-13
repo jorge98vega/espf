@@ -7,7 +7,7 @@ import numpy as np
 
 def create_bondi_radii():
     # A. Bondi (1964). "van der Waals Volumes and Radii". J. Phys. Chem. 68: 441. doi:10.1021/j100785a001
-    r = {}
+    r = {} # Å
     r["H"] = 1.2
     r["C"] = 1.7
     r["N"] = 1.55
@@ -47,6 +47,8 @@ def create_bondi_radii():
     r["U"] = 1.86
     r["Xe"] = 2.16
     r["Zn"] = 1.37
+
+    r["B"] = 1.92 # https://doi.org/10.1021/jp8111556
     return r
 
 

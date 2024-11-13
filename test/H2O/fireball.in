@@ -1,5 +1,5 @@
 &OPTION
-fdatalocation = "/home/jorge/FB/charges/runs/HCNOF_test/Fdata"
+fdatalocation = "/home/jorge/research/charges/runs/HCNOFS_600/Fdata"
 nstepf = 1
 iquench = -1
 icluster = 1

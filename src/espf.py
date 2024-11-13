@@ -7,12 +7,10 @@ import constants
 # Functions
 
 
-def center_coordinates(rs):
-    com = np.zeros(3)
-    for r in rs:
-        com = com + r
-    com = com/len(rs)
-    return rs - com
+def center_coordinates(rqs):
+    com = np.sum(rqs, axis=0)
+    com = com/len(rqs)
+    return rqs - com
 
 
 def compute_dipole(rqs, qs, debye=True):
@@ -40,6 +38,13 @@ def dipole2charges(rp, p, q=None, d=None, debye=True):
     rqs = np.array([rp - 0.5*d*up, rp + 0.5*d*up])
     qs = np.array([-q, q])
     return rqs, qs
+
+
+def compute_quadrupole(rqs, qs, debye=True):
+    Q = np.sum(np.array([q*(3*np.outer(rq, rq) - np.linalg.norm(rq)**2*np.eye(3)) for q, rq in zip(qs, rqs)]), axis=0)
+    if debye:
+        Q = Q/constants.debye # eÅ^2 to DÅ
+    return Q
 
 
 def compute_espcharges(Rs, rs, Vs, Q=0.0):

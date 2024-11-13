@@ -17,7 +17,18 @@ def read_coordinates(filename):
     return np.array(Zs), np.array(positions)
 
 
-def read_charges(filename):
+def read_charges(filename, Zs):
+    qZ = {1: 1, 5: 3, 6: 4, 7: 5, 8: 6, 9: 7, 16: 6}
+    charges = []
+    with open(filename) as f:
+        next(f) # Ignore first line
+        for line, Z in zip(f, Zs):
+            data = line.split()
+            charges.append(qZ[Z] - np.sum(np.array(data, dtype=float)))
+    return np.array(charges)
+
+
+def read_partialcharges(filename):
     symbols = []
     charges = []
     with open(filename) as f:
@@ -47,7 +58,10 @@ def read_dipoles(filename):
 def read_xsf(filename):
     lvs = []
     with open(filename) as f:
-        for i in range(14): next(f) # Ignore first 14 lines
+        for i in range(6): next(f) # Ignore first 6 lines
+        line = f.readline()
+        skip = int(line.split()[0])
+        for i in range(4+skip): next(f) # Ignore following 4+skip lines
         line = f.readline()
         Npoints = np.array(line.split(), dtype=int)
 
@@ -58,7 +72,7 @@ def read_xsf(filename):
             line = f.readline()
             lvs.append(np.array(line.split(), dtype=float))
 
-    data = np.genfromtxt(filename, dtype=float, skip_header=19, skip_footer=2)
+    data = np.genfromtxt(filename, dtype=float, skip_header=16+skip, skip_footer=2)
     pots1d = -data
     pots3d = -data.reshape((Npoints[2], Npoints[1], Npoints[0])).transpose()
     return Npoints, origin, np.array(lvs), pots1d, pots3d

@@ -136,104 +136,104 @@
        2       H      0.00000     0.00000     0.00000        1
        3       H      0.00000     0.00000     0.00000        1
   call read_wf
-    Read wave function from file: /home/jorge/FB/charges/runs/HCNOF_test/F
-     shell:  1 ispec: 1 dr =     0.0026458862
+    Read wave function from file: /home/jorge/research/charges/runs/HCNOFS
+     shell:  1 ispec: 1 dr =     0.0031750635
        Checking normalization [NORM(l) should be 1]
        NORM (shell = 1) =   0.999999999746
     --------------------------------------------------- 
    Checking normalization for mesh:           40
-       NORM (shell = 1) =   0.999990108210
+       NORM (shell = 1) =   0.999977025671
     --------------------------------------------------- 
-    Read wave function from file: /home/jorge/FB/charges/runs/HCNOF_test/F
-     shell:  2 ispec: 1 dr =     0.0026458862
+    Read wave function from file: /home/jorge/research/charges/runs/HCNOFS
+     shell:  2 ispec: 1 dr =     0.0031750635
        Checking normalization [NORM(l) should be 1]
-       NORM (shell = 2) =   0.999999999741
+       NORM (shell = 2) =   0.999999999714
     --------------------------------------------------- 
    Checking normalization for mesh:           40
-       NORM (shell = 2) =   0.998909767649
+       NORM (shell = 2) =   0.997478324205
     --------------------------------------------------- 
-    Read wave function from file: /home/jorge/FB/charges/runs/HCNOF_test/F
-     shell:  1 ispec: 2 dr =     0.0026458862
+    Read wave function from file: /home/jorge/research/charges/runs/HCNOFS
+     shell:  1 ispec: 2 dr =     0.0031750635
        Checking normalization [NORM(l) should be 1]
-       NORM (shell = 1) =   0.999999999722
+       NORM (shell = 1) =   0.999999999738
     --------------------------------------------------- 
    Checking normalization for mesh:           40
-       NORM (shell = 1) =   0.999999980753
+       NORM (shell = 1) =   0.999999956396
     --------------------------------------------------- 
-    Read wave function from file: /home/jorge/FB/charges/runs/HCNOF_test/F
-     shell:  2 ispec: 2 dr =     0.0026458862
+    Read wave function from file: /home/jorge/research/charges/runs/HCNOFS
+     shell:  2 ispec: 2 dr =     0.0031750635
        Checking normalization [NORM(l) should be 1]
-       NORM (shell = 2) =   0.999999999757
+       NORM (shell = 2) =   0.999999999764
     --------------------------------------------------- 
    Checking normalization for mesh:           40
-       NORM (shell = 2) =   0.999999804845
+       NORM (shell = 2) =   1.000010177526
     --------------------------------------------------- 
-    Read wave function from file: /home/jorge/FB/charges/runs/HCNOF_test/F
-     shell:  3 ispec: 2 dr =     0.0026458862
+    Read wave function from file: /home/jorge/research/charges/runs/HCNOFS
+     shell:  3 ispec: 2 dr =     0.0031750635
        Checking normalization [NORM(l) should be 1]
-       NORM (shell = 3) =   0.999999999750
+       NORM (shell = 3) =   0.999999999751
     --------------------------------------------------- 
    Checking normalization for mesh:           40
-       NORM (shell = 3) =   1.000000011728
+       NORM (shell = 3) =   1.000000011719
     --------------------------------------------------- 
    
   *---------------------  END READ_WF  ----------------------*
   call read_vna
-    Read neutral atomic potential from file: /home/jorge/FB/charges/runs/HCNOF_test/F
-    Read neutral atomic potential from file: /home/jorge/FB/charges/runs/HCNOF_test/F
+    Read neutral atomic potential from file: /home/jorge/research/charges/runs/HCNOFS
+    Read neutral atomic potential from file: /home/jorge/research/charges/runs/HCNOFS
    
   *---------------------  END READ_VNA  ----------------------*
   initialize grid
   ---------------------------------
            Lattice vector          
   ---------------------------------
-   21.3716586857641       0.000000000000000E+000  0.000000000000000E+000
-  0.000000000000000E+000   21.3716586857641       0.000000000000000E+000
-  0.000000000000000E+000  0.000000000000000E+000   21.3716586857641     
+   24.2630536246336       0.000000000000000E+000  0.000000000000000E+000
+  0.000000000000000E+000   24.2630536246336       0.000000000000000E+000
+  0.000000000000000E+000  0.000000000000000E+000   24.2630536246336     
  atomic units
-   40.3865788375268       0.000000000000000E+000  0.000000000000000E+000
-  0.000000000000000E+000   40.3865788375268       0.000000000000000E+000
-  0.000000000000000E+000  0.000000000000000E+000   40.3865788375268     
+   45.8505229967542       0.000000000000000E+000  0.000000000000000E+000
+  0.000000000000000E+000   45.8505229967542       0.000000000000000E+000
+  0.000000000000000E+000  0.000000000000000E+000   45.8505229967542     
  Reciporocal Lattice vector [Angstrom]:
-  0.293996146932895       0.000000000000000E+000  0.000000000000000E+000
-  0.000000000000000E+000  0.293996146932895       0.000000000000000E+000
-  0.000000000000000E+000  0.000000000000000E+000  0.293996146932895     
- Volume [Ang^3]=    9761.45797980489     
+  0.258961027922736       0.000000000000000E+000  0.000000000000000E+000
+  0.000000000000000E+000  0.258961027922736       0.000000000000000E+000
+  0.000000000000000E+000  0.000000000000000E+000  0.258961027922736     
+ Volume [Ang^3]=    14283.5570650228     
  Reciporocal Lattice vector [abohr]:
-  0.155576072250549       0.000000000000000E+000  0.000000000000000E+000
-  0.000000000000000E+000  0.155576072250549       0.000000000000000E+000
-  0.000000000000000E+000  0.000000000000000E+000  0.155576072250549     
+  0.137036284354366       0.000000000000000E+000  0.000000000000000E+000
+  0.000000000000000E+000  0.137036284354366       0.000000000000000E+000
+  0.000000000000000E+000  0.000000000000000E+000  0.137036284354366     
  Reciporocal Elementary Lattice vector [Angstrom]:
-   4.02402084295337       0.000000000000000E+000  0.000000000000000E+000
-  0.000000000000000E+000   4.02402084295337       0.000000000000000E+000
-  0.000000000000000E+000  0.000000000000000E+000   4.02402084295337     
- Volume [Ang^3]=    65.1599383325638     
+   4.03906291088206       0.000000000000000E+000  0.000000000000000E+000
+  0.000000000000000E+000   4.03906291088206       0.000000000000000E+000
+  0.000000000000000E+000  0.000000000000000E+000   4.03906291088206     
+ Volume [Ang^3]=    65.8933902609433     
  Reciporocal Elementary Lattice vector [abohr]:
-   4.02402084295337       0.000000000000000E+000  0.000000000000000E+000
-  0.000000000000000E+000   4.02402084295337       0.000000000000000E+000
-  0.000000000000000E+000  0.000000000000000E+000   4.02402084295337     
+   4.03906291088206       0.000000000000000E+000  0.000000000000000E+000
+  0.000000000000000E+000   4.03906291088206       0.000000000000000E+000
+  0.000000000000000E+000  0.000000000000000E+000   4.03906291088206     
    ---------  Begin mesh Info --------- 
  
- Rc_max = 2.645885
+ Rc_max = 3.175062
    Ecut =         4.000000 [Ry] 
    droff =         1.000000 [Ang] 
-   Virtual initial grid point :    -10.68582934    -10.68582934    -10.97136268
- Regular mesh:        86       86       86   636056
-dVol :      0.01534685
- Extended mesh:       108      108      108  1259712
+   Virtual initial grid point :    -12.13152681    -12.13152681    -12.41704281
+ Regular mesh:        98       98       98   941192
+dVol :      0.01517603
+ Extended mesh:       124      124      124  1906624
   Elementary grid lattice vector :
-          0.24850766      0.00000000      0.00000000
-          0.00000000      0.24850766      0.00000000
-          0.00000000      0.00000000      0.24850766
+          0.24758218      0.00000000      0.00000000
+          0.00000000      0.24758218      0.00000000
+          0.00000000      0.00000000      0.24758218
    ---------   End mesh Info --------- 
  atomic mesh
- Atomic mesh:        23       23       23     5041
+ Atomic mesh:        27       27       27     8829
    ----    the FDM grid informations   ----- 
    Ecut =         4.000000 [Ry] 
-   Normal FDM mesh:       636056
-   Number of points =        86       86       86
-   Extended FDM mesh:       681472
-   Number of points =        88       88       88
+   Normal FDM mesh:       941192
+   Number of points =        98       98       98
+   Extended FDM mesh:      1000000
+   Number of points =       100      100      100
  
   In setgear, using gear order of            2
  
@@ -312,16 +312,16 @@ dVol :      0.01534685
   Assemble three-center PP interactions. 
   Assemble atomic density 
  elvec
-    0.248508    0.000000    0.000000
-    0.000000    0.248508    0.000000
-    0.000000    0.000000    0.248508
- Rc_max =   2.64588500000000     
-  Psi^2 =   13.4371713964386     
- vol    =  1.534685307552306E-002
- # hit  =       65533
-SPHERE =     0.0153469  1005.7253226    77.5892407   928.1360819    12.9621751
-  -- Total atomic density before renormalization =   7.98368706236697     
-  -- Total atomic density after renormalization =   7.99999999999999     
+    0.247582    0.000000    0.000000
+    0.000000    0.247582    0.000000
+    0.000000    0.000000    0.247582
+ Rc_max =   3.17506200000000     
+  Psi^2 =   13.4165339825912     
+ vol    =  1.517602897710857E-002
+ # hit  =      114777
+SPHERE =     0.0151760  1741.8590779   134.0742080  1607.7848699    12.9917536
+  -- Total atomic density before renormalization =   7.98274616489570     
+  -- Total atomic density after renormalization =   8.00000000000001     
   Assemble neutral atomic potential 
    Write out xsf file vna.xsf                                 
 ======================================================================
@@ -336,7 +336,7 @@ SPHERE =     0.0153469  1005.7253226    77.5892407   928.1360819    12.9621751
   Call diagonalizer for Hamiltonian. 
              The energy eigenvalues: 
   *********************************************** 
-   eigenvalue(1) = -28.758868 eigenvalue(norbitals) =  76.429200
+   eigenvalue(1) = -29.347975 eigenvalue(norbitals) =  73.891408
    
    
   ****************************************************** 
@@ -344,22 +344,22 @@ SPHERE =     0.0153469  1005.7253226    77.5892407   928.1360819    12.9621751
                   -  Welcome to denmat_G -               
    
   ****************************************************** 
-  Fermi Level =   -2.41185106405047     
- pcharge =   8.00000051565877     
+  Fermi Level =   -3.48812928887742     
+ pcharge =   8.00000043799505     
  mixer_KS
- =======> sigma =  0.1824976E-01 Must be less than 0.1000000E-07 SCF step =   1
+ =======> sigma =  0.1821973E-01 Must be less than 0.1000000E-07 SCF step =   1
   Assemble density
-  -- Total density before renormalization =   7.98386071892056     
-  -- Total density after renormalization =   7.99999999999998     
-  residua drhoG =   8.917808751703316E-002  1.368603006680045E-003
-  -- Check sum drho should go to zero =  1.557131160123681E-015
-  -- |drho| =  6.201365745938328E-002
+  -- Total density before renormalization =   7.98292672849790     
+  -- Total density after renormalization =   8.00000000000003     
+  residua drhoG =   8.964106142847417E-002  1.360395345777294E-003
+  -- Check sum drho should go to zero =  5.647175435607998E-015
+  -- |drho| =  6.423747400333754E-002
  Ankais Dip
-  Dipole_x =  0.797132E-13  [D] 
-  Dipole_y = -0.175439E-09  [D] 
-  Dipole_z =  0.132876E+00  [D] 
-  Dipole_tot =  0.132876E+00  [D] 
-             BAD NEWS; results are not self-consistent 
+  Dipole_x =  0.331353E-12  [D] 
+  Dipole_y = -0.136907E-09  [D] 
+  Dipole_z =  0.141103E+00  [D] 
+  Dipole_tot =  0.141103E+00  [D] 
+      BAD NEWS; results are not self-consistent 
    
    
   ****************************************************** 
@@ -372,7 +372,7 @@ SPHERE =     0.0153469  1005.7253226    77.5892407   928.1360819    12.9621751
    
    
   Solve Poisson equation
-  residua vcaG =   0.805251877026170       1.235808224550979E-002
+  residua vcaG =   0.826619560937863       1.254480240983777E-002
    Write out xsf file fftpot.xsf                              
 ======================================================================
    Write out xsf file vhartree.xsf                            
@@ -382,7 +382,7 @@ SPHERE =     0.0153469  1005.7253226    77.5892407   928.1360819    12.9621751
   Call diagonalizer for Hamiltonian. 
              The energy eigenvalues: 
   *********************************************** 
-   eigenvalue(1) = -28.437937 eigenvalue(norbitals) =  76.420380
+   eigenvalue(1) = -29.014549 eigenvalue(norbitals) =  73.886551
    
    
   ****************************************************** 
@@ -390,22 +390,22 @@ SPHERE =     0.0153469  1005.7253226    77.5892407   928.1360819    12.9621751
                   -  Welcome to denmat_G -               
    
   ****************************************************** 
-  Fermi Level =   -2.17335779565036     
- pcharge =   8.00000054689351     
+  Fermi Level =   -3.23927433915100     
+ pcharge =   8.00000046506346     
  mixer_KS
- =======> sigma =  0.1691714E-01 Must be less than 0.1000000E-07 SCF step =   2
+ =======> sigma =  0.1689246E-01 Must be less than 0.1000000E-07 SCF step =   2
   Assemble density
-  -- Total density before renormalization =   7.98667252974870     
-  -- Total density after renormalization =   8.00000000000001     
-  residua drhoG =    1.32797122425961       2.038017926723478E-002
-  -- Check sum drho should go to zero = -9.377915111130619E-015
-  -- |drho| =  0.954838430231449     
+  -- Total density before renormalization =   7.98568969068225     
+  -- Total density after renormalization =   8.00000000000004     
+  residua drhoG =    1.28872841625909       1.955777978877125E-002
+  -- Check sum drho should go to zero = -1.838806884535416E-015
+  -- |drho| =  0.957475555168592     
  Ankais Dip
-  Dipole_x = -0.408937E-12  [D] 
-  Dipole_y = -0.275092E-08  [D] 
-  Dipole_z =  0.204000E+01  [D] 
-  Dipole_tot =  0.204000E+01  [D] 
-             BAD NEWS; results are not self-consistent 
+  Dipole_x = -0.136789E-12  [D] 
+  Dipole_y = -0.210422E-08  [D] 
+  Dipole_z =  0.209953E+01  [D] 
+  Dipole_tot =  0.209953E+01  [D] 
+      BAD NEWS; results are not self-consistent 
    
    
   ****************************************************** 
@@ -418,7 +418,7 @@ SPHERE =     0.0153469  1005.7253226    77.5892407   928.1360819    12.9621751
    
    
   Solve Poisson equation
-  residua vcaG =    11.5756166574634       0.177649288100668     
+  residua vcaG =    11.4770345346095       0.174175808668510     
    Write out xsf file fftpot.xsf                              
 ======================================================================
    Write out xsf file vhartree.xsf                            
@@ -428,7 +428,7 @@ SPHERE =     0.0153469  1005.7253226    77.5892407   928.1360819    12.9621751
   Call diagonalizer for Hamiltonian. 
              The energy eigenvalues: 
   *********************************************** 
-   eigenvalue(1) = -24.059684 eigenvalue(norbitals) =  76.398323
+   eigenvalue(1) = -24.615543 eigenvalue(norbitals) =  73.912936
    
    
   ****************************************************** 
@@ -436,22 +436,22 @@ SPHERE =     0.0153469  1005.7253226    77.5892407   928.1360819    12.9621751
                   -  Welcome to denmat_G -               
    
   ****************************************************** 
-  Fermi Level =    1.10481767040443     
- pcharge =   8.00000095738658     
+  Fermi Level =   6.657644098440763E-002
+ pcharge =   8.00000081078059     
  mixer_KS
- =======> sigma =  0.6185964E-02 Must be less than 0.1000000E-07 SCF step =   3
+ =======> sigma =  0.6522080E-02 Must be less than 0.1000000E-07 SCF step =   3
   Assemble density
-  -- Total density before renormalization =   7.98681146122419     
-  -- Total density after renormalization =   8.00000000000001     
-  residua drhoG =   0.338031822662688       5.187724717255541E-003
-  -- Check sum drho should go to zero = -6.585010314807960E-015
-  -- |drho| =  0.663761241648794     
+  -- Total density before renormalization =   7.98583493054428     
+  -- Total density after renormalization =   8.00000000000000     
+  residua drhoG =   0.336118269678855       5.100940600381900E-003
+  -- Check sum drho should go to zero =  4.472117121068209E-015
+  -- |drho| =  0.658305190922687     
  Ankais Dip
-  Dipole_x = -0.299462E-12  [D] 
-  Dipole_y = -0.199520E-08  [D] 
-  Dipole_z =  0.133279E+01  [D] 
-  Dipole_tot =  0.133279E+01  [D] 
-             BAD NEWS; results are not self-consistent 
+  Dipole_x =  0.278451E-12  [D] 
+  Dipole_y = -0.161723E-08  [D] 
+  Dipole_z =  0.137069E+01  [D] 
+  Dipole_tot =  0.137069E+01  [D] 
+      BAD NEWS; results are not self-consistent 
    
    
   ****************************************************** 
@@ -464,7 +464,7 @@ SPHERE =     0.0153469  1005.7253226    77.5892407   928.1360819    12.9621751
    
    
   Solve Poisson equation
-  residua vcaG =    4.09597265272566       6.286029050274107E-002
+  residua vcaG =    4.11922261127948       6.251344171193816E-002
    Write out xsf file fftpot.xsf                              
 ======================================================================
    Write out xsf file vhartree.xsf                            
@@ -474,7 +474,7 @@ SPHERE =     0.0153469  1005.7253226    77.5892407   928.1360819    12.9621751
   Call diagonalizer for Hamiltonian. 
              The energy eigenvalues: 
   *********************************************** 
-   eigenvalue(1) = -25.601278 eigenvalue(norbitals) =  76.431962
+   eigenvalue(1) = -26.193733 eigenvalue(norbitals) =  73.912932
    
    
   ****************************************************** 
@@ -482,22 +482,22 @@ SPHERE =     0.0153469  1005.7253226    77.5892407   928.1360819    12.9621751
                   -  Welcome to denmat_G -               
    
   ****************************************************** 
-  Fermi Level =  -4.296775287434507E-002
- pcharge =   8.00000081040253     
+  Fermi Level =   -1.11706642748368     
+ pcharge =   8.00000068515676     
  mixer_KS
- =======> sigma =  0.5400359E-02 Must be less than 0.1000000E-07 SCF step =   4
+ =======> sigma =  0.5813729E-02 Must be less than 0.1000000E-07 SCF step =   4
   Assemble density
-  -- Total density before renormalization =   7.99230959580523     
-  -- Total density after renormalization =   8.00000000000002     
-  residua drhoG =    1.09276573835264       1.677051523246339E-002
-  -- Check sum drho should go to zero =  3.122502256758253E-015
-  -- |drho| =   1.12679356923338     
+  -- Total density before renormalization =   7.99187592519618     
+  -- Total density after renormalization =   8.00000000000001     
+  residua drhoG =    1.15084926880855       1.746532185172274E-002
+  -- Check sum drho should go to zero =  6.092348847630547E-015
+  -- |drho| =   1.16102090059679     
  Ankais Dip
-  Dipole_x =  0.106728E-12  [D] 
-  Dipole_y = -0.332300E-08  [D] 
-  Dipole_z =  0.166874E+01  [D] 
-  Dipole_tot =  0.166874E+01  [D] 
-             BAD NEWS; results are not self-consistent 
+  Dipole_x =  0.434580E-12  [D] 
+  Dipole_y = -0.321272E-08  [D] 
+  Dipole_z =  0.180784E+01  [D] 
+  Dipole_tot =  0.180784E+01  [D] 
+      BAD NEWS; results are not self-consistent 
    
    
   ****************************************************** 
@@ -510,7 +510,7 @@ SPHERE =     0.0153469  1005.7253226    77.5892407   928.1360819    12.9621751
    
    
   Solve Poisson equation
-  residua vcaG =    4.12892466095060       6.336600013151275E-002
+  residua vcaG =    4.65774395744513       7.068605726613970E-002
    Write out xsf file fftpot.xsf                              
 ======================================================================
    Write out xsf file vhartree.xsf                            
@@ -520,7 +520,7 @@ SPHERE =     0.0153469  1005.7253226    77.5892407   928.1360819    12.9621751
   Call diagonalizer for Hamiltonian. 
              The energy eigenvalues: 
   *********************************************** 
-   eigenvalue(1) = -24.724249 eigenvalue(norbitals) =  76.796459
+   eigenvalue(1) = -25.203421 eigenvalue(norbitals) =  74.243117
    
    
   ****************************************************** 
@@ -528,22 +528,22 @@ SPHERE =     0.0153469  1005.7253226    77.5892407   928.1360819    12.9621751
                   -  Welcome to denmat_G -               
    
   ****************************************************** 
-  Fermi Level =   0.705928324657531     
- pcharge =   8.00000086276675     
+  Fermi Level =  -0.291786624069461     
+ pcharge =   8.00000074429985     
  mixer_KS
- =======> sigma =  0.1663177E-04 Must be less than 0.1000000E-07 SCF step =   5
+ =======> sigma =  0.1719820E-04 Must be less than 0.1000000E-07 SCF step =   5
   Assemble density
-  -- Total density before renormalization =   7.99229752495500     
-  -- Total density after renormalization =   8.00000000000000     
-  residua drhoG =   1.998502197458141E-002  3.067071959550006E-004
-  -- Check sum drho should go to zero = -4.073130721593543E-015
-  -- |drho| =   1.13290040685351     
+  -- Total density before renormalization =   7.99186795386420     
+  -- Total density after renormalization =   8.00000000000001     
+  residua drhoG =   1.818866972031241E-002  2.760317787305185E-004
+  -- Check sum drho should go to zero =  1.303818164544168E-014
+  -- |drho| =   1.16783377764258     
  Ankais Dip
-  Dipole_x = -0.202442E-12  [D] 
-  Dipole_y = -0.339369E-08  [D] 
-  Dipole_z =  0.169594E+01  [D] 
-  Dipole_tot =  0.169594E+01  [D] 
-             BAD NEWS; results are not self-consistent 
+  Dipole_x =  0.653332E-12  [D] 
+  Dipole_y = -0.327112E-08  [D] 
+  Dipole_z =  0.183508E+01  [D] 
+  Dipole_tot =  0.183508E+01  [D] 
+      BAD NEWS; results are not self-consistent 
    
    
   ****************************************************** 
@@ -556,7 +556,7 @@ SPHERE =     0.0153469  1005.7253226    77.5892407   928.1360819    12.9621751
    
    
   Solve Poisson equation
-  residua vcaG =   0.178102906389746       2.733319136687074E-003
+  residua vcaG =   0.170325144437368       2.584859327511698E-003
    Write out xsf file fftpot.xsf                              
 ======================================================================
    Write out xsf file vhartree.xsf                            
@@ -566,7 +566,7 @@ SPHERE =     0.0153469  1005.7253226    77.5892407   928.1360819    12.9621751
   Call diagonalizer for Hamiltonian. 
              The energy eigenvalues: 
   *********************************************** 
-   eigenvalue(1) = -24.658067 eigenvalue(norbitals) =  76.795389
+   eigenvalue(1) = -25.137985 eigenvalue(norbitals) =  74.243665
    
    
   ****************************************************** 
@@ -574,22 +574,22 @@ SPHERE =     0.0153469  1005.7253226    77.5892407   928.1360819    12.9621751
                   -  Welcome to denmat_G -               
    
   ****************************************************** 
-  Fermi Level =   0.755297000422411     
- pcharge =   8.00000086914362     
+  Fermi Level =  -0.242572427290032     
+ pcharge =   8.00000074953671     
  mixer_KS
- =======> sigma =  0.9632928E-05 Must be less than 0.1000000E-07 SCF step =   6
+ =======> sigma =  0.1038020E-04 Must be less than 0.1000000E-07 SCF step =   6
   Assemble density
-  -- Total density before renormalization =   7.99270235057700     
-  -- Total density after renormalization =   8.00000000000002     
-  residua drhoG =   6.029498132297029E-002  9.253382195550319E-004
-  -- Check sum drho should go to zero = -2.220446049250313E-016
-  -- |drho| =   1.12970085137589     
+  -- Total density before renormalization =   7.99227534412785     
+  -- Total density after renormalization =   7.99999999999997     
+  residua drhoG =   6.429545360254441E-002  9.757496669685538E-004
+  -- Check sum drho should go to zero = -5.259681579161679E-015
+  -- |drho| =   1.16421872869036     
  Ankais Dip
-  Dipole_x =  0.537301E-13  [D] 
-  Dipole_y = -0.428406E-08  [D] 
-  Dipole_z =  0.165235E+01  [D] 
-  Dipole_tot =  0.165235E+01  [D] 
-             BAD NEWS; results are not self-consistent 
+  Dipole_x = -0.347438E-12  [D] 
+  Dipole_y = -0.431606E-08  [D] 
+  Dipole_z =  0.178664E+01  [D] 
+  Dipole_tot =  0.178664E+01  [D] 
+      BAD NEWS; results are not self-consistent 
    
    
   ****************************************************** 
@@ -602,7 +602,7 @@ SPHERE =     0.0153469  1005.7253226    77.5892407   928.1360819    12.9621751
    
    
   Solve Poisson equation
-  residua vcaG =   0.273854435618554       4.202803787518239E-003
+  residua vcaG =   0.282591626235371       4.288618708436228E-003
    Write out xsf file fftpot.xsf                              
 ======================================================================
    Write out xsf file vhartree.xsf                            
@@ -612,7 +612,7 @@ SPHERE =     0.0153469  1005.7253226    77.5892407   928.1360819    12.9621751
   Call diagonalizer for Hamiltonian. 
              The energy eigenvalues: 
   *********************************************** 
-   eigenvalue(1) = -24.590553 eigenvalue(norbitals) =  76.851429
+   eigenvalue(1) = -25.068354 eigenvalue(norbitals) =  74.291509
    
    
   ****************************************************** 
@@ -620,22 +620,22 @@ SPHERE =     0.0153469  1005.7253226    77.5892407   928.1360819    12.9621751
                   -  Welcome to denmat_G -               
    
   ****************************************************** 
-  Fermi Level =   0.819942510842283     
- pcharge =   8.00000086997454     
+  Fermi Level =  -0.178387857290685     
+ pcharge =   8.00000075021991     
  mixer_KS
- =======> sigma =  0.2668105E-06 Must be less than 0.1000000E-07 SCF step =   7
+ =======> sigma =  0.3263409E-06 Must be less than 0.1000000E-07 SCF step =   7
   Assemble density
-  -- Total density before renormalization =   7.99267263488268     
-  -- Total density after renormalization =   8.00000000000000     
-  residua drhoG =   7.025229249039810E-003  1.078151611068812E-004
-  -- Check sum drho should go to zero = -2.227384943154220E-015
-  -- |drho| =   1.12659271321795     
+  -- Total density before renormalization =   7.99222935155795     
+  -- Total density after renormalization =   7.99999999999999     
+  residua drhoG =   8.326217832754779E-003  1.263589230996047E-004
+  -- Check sum drho should go to zero = -3.101685575046531E-015
+  -- |drho| =   1.16054476085941     
  Ankais Dip
-  Dipole_x = -0.142062E-12  [D] 
-  Dipole_y = -0.427869E-08  [D] 
-  Dipole_z =  0.165066E+01  [D] 
-  Dipole_tot =  0.165066E+01  [D] 
-             BAD NEWS; results are not self-consistent 
+  Dipole_x = -0.128035E-12  [D] 
+  Dipole_y = -0.430035E-08  [D] 
+  Dipole_z =  0.178555E+01  [D] 
+  Dipole_tot =  0.178555E+01  [D] 
+      BAD NEWS; results are not self-consistent 
    
    
   ****************************************************** 
@@ -648,7 +648,7 @@ SPHERE =     0.0153469  1005.7253226    77.5892407   928.1360819    12.9621751
    
    
   Solve Poisson equation
-  residua vcaG =   2.296064312978174E-002  3.523736166322783E-004
+  residua vcaG =   2.463422311316599E-002  3.738496837939648E-004
    Write out xsf file fftpot.xsf                              
 ======================================================================
    Write out xsf file vhartree.xsf                            
@@ -658,7 +658,7 @@ SPHERE =     0.0153469  1005.7253226    77.5892407   928.1360819    12.9621751
   Call diagonalizer for Hamiltonian. 
              The energy eigenvalues: 
   *********************************************** 
-   eigenvalue(1) = -24.592775 eigenvalue(norbitals) =  76.849059
+   eigenvalue(1) = -25.069301 eigenvalue(norbitals) =  74.288296
    
    
   ****************************************************** 
@@ -666,22 +666,22 @@ SPHERE =     0.0153469  1005.7253226    77.5892407   928.1360819    12.9621751
                   -  Welcome to denmat_G -               
    
   ****************************************************** 
-  Fermi Level =   0.817683338474895     
- pcharge =   8.00000086988913     
+  Fermi Level =  -0.179901501945301     
+ pcharge =   8.00000075025899     
  mixer_KS
- =======> sigma =  0.2473936E-06 Must be less than 0.1000000E-07 SCF step =   8
+ =======> sigma =  0.1260729E-06 Must be less than 0.1000000E-07 SCF step =   8
   Assemble density
-  -- Total density before renormalization =   7.99267108560451     
-  -- Total density after renormalization =   7.99999999999998     
-  residua drhoG =   3.751199406869521E-003  5.756910615421577E-005
-  -- Check sum drho should go to zero =  7.646661082105766E-015
-  -- |drho| =   1.12729446567366     
+  -- Total density before renormalization =   7.99221601411798     
+  -- Total density after renormalization =   7.99999999999997     
+  residua drhoG =   2.902646123880359E-003  4.405064168630021E-005
+  -- Check sum drho should go to zero =  2.033095913844818E-015
+  -- |drho| =   1.16074833855769     
  Ankais Dip
-  Dipole_x =  0.387945E-12  [D] 
-  Dipole_y = -0.399311E-08  [D] 
-  Dipole_z =  0.165890E+01  [D] 
-  Dipole_tot =  0.165890E+01  [D] 
-             BAD NEWS; results are not self-consistent 
+  Dipole_x =  0.196432E-12  [D] 
+  Dipole_y = -0.400388E-08  [D] 
+  Dipole_z =  0.178954E+01  [D] 
+  Dipole_tot =  0.178954E+01  [D] 
+      BAD NEWS; results are not self-consistent 
    
    
   ****************************************************** 
@@ -694,7 +694,7 @@ SPHERE =     0.0153469  1005.7253226    77.5892407   928.1360819    12.9621751
    
    
   Solve Poisson equation
-  residua vcaG =   2.481099605064330E-002  3.807707110466055E-004
+  residua vcaG =   1.320316637411700E-002  2.003716354831852E-004
    Write out xsf file fftpot.xsf                              
 ======================================================================
    Write out xsf file vhartree.xsf                            
@@ -704,7 +704,7 @@ SPHERE =     0.0153469  1005.7253226    77.5892407   928.1360819    12.9621751
   Call diagonalizer for Hamiltonian. 
              The energy eigenvalues: 
   *********************************************** 
-   eigenvalue(1) = -24.588407 eigenvalue(norbitals) =  76.845075
+   eigenvalue(1) = -25.066872 eigenvalue(norbitals) =  74.286347
    
    
   ****************************************************** 
@@ -712,21 +712,71 @@ SPHERE =     0.0153469  1005.7253226    77.5892407   928.1360819    12.9621751
                   -  Welcome to denmat_G -               
    
   ****************************************************** 
-  Fermi Level =   0.819963831286701     
- pcharge =   8.00000087067735     
+  Fermi Level =  -0.178566953211872     
+ pcharge =   8.00000075062500     
  mixer_KS
- =======> sigma =  0.1683334E-08 Must be less than 0.1000000E-07 SCF step =   9
+ =======> sigma =  0.6232849E-08 Must be less than 0.1000000E-07 SCF step =   9
   Assemble density
-  -- Total density before renormalization =   7.99267293622953     
-  -- Total density after renormalization =   7.99999999999999     
-  residua drhoG =   4.672658946240915E-004  7.171061031998772E-006
-  -- Check sum drho should go to zero = -1.762479051592436E-015
-  -- |drho| =   1.12744205256682     
+  -- Total density before renormalization =   7.99221678610317     
+  -- Total density after renormalization =   7.99999999999998     
+  residua drhoG =   6.891882326405252E-004  1.045914058923486E-005
+  -- Check sum drho should go to zero = -7.008282842946301E-016
+  -- |drho| =   1.16091622771822     
  Ankais Dip
-  Dipole_x = -0.807884E-13  [D] 
-  Dipole_y = -0.398229E-08  [D] 
-  Dipole_z =  0.165956E+01  [D] 
-  Dipole_tot =  0.165956E+01  [D] 
+  Dipole_x = -0.144209E-14  [D] 
+  Dipole_y = -0.395098E-08  [D] 
+  Dipole_z =  0.179039E+01  [D] 
+  Dipole_tot =  0.179039E+01  [D] 
+   
+   
+  ****************************************************** 
+   
+                  -  Welcome to denmat_G -               
+   
+  ****************************************************** 
+   
+  Call diagonalizer for Hamiltonian. 
+             The energy eigenvalues: 
+  *********************************************** 
+   
+   
+  ****************************************************** 
+   
+                  -  Welcome to denmat_G -               
+   
+  ****************************************************** 
+   
+   
+  ****************************************************** 
+   
+                  -  Welcome to denmat_G -               
+   
+  ****************************************************** 
+   
+  Call diagonalizer for Hamiltonian. 
+             The energy eigenvalues: 
+  *********************************************** 
+   
+   
+  ****************************************************** 
+   
+                  -  Welcome to denmat_G -               
+   
+  ****************************************************** 
+   
+   
+  ****************************************************** 
+   
+                  -  Welcome to denmat_G -               
+   
+  ****************************************************** 
+   
+   
+  ****************************************************** 
+   
+                  -  Welcome to denmat_G -               
+   
+  ****************************************************** 
    
    
   ****************************************************** 
@@ -736,13 +786,13 @@ SPHERE =     0.0153469  1005.7253226    77.5892407   928.1360819    12.9621751
   ****************************************************** 
  calculate Q0_TOT
  Q0_TOT   6.00000000000000        1.00000000000000        1.00000000000000     
-intra | res | intra+res dipole ( O  )=     0.0000    0.0000    0.5266 |    -0.0000   -0.0000    0.0558 |     0.0000   -0.0000    0.5824
-intra | res | intra+res dipole ( H  )=     0.0000    0.0000   -0.0000 |    -0.0000    0.0223    0.0279 |    -0.0000    0.0223    0.0279
-intra | res | intra+res dipole ( H  )=     0.0000   -0.0000   -0.0000 |    -0.0000   -0.0223    0.0279 |    -0.0000   -0.0223    0.0279
+intra | res | intra+res dipole ( O  )=     0.0000    0.0000    0.6793 |    -0.0000   -0.0000    0.1151 |     0.0000   -0.0000    0.7944
+intra | res | intra+res dipole ( H  )=     0.0000    0.0000   -0.0000 |    -0.0000    0.0460    0.0575 |    -0.0000    0.0460    0.0575
+intra | res | intra+res dipole ( H  )=     0.0000   -0.0000   -0.0000 |    -0.0000   -0.0460    0.0575 |    -0.0000   -0.0460    0.0575
    
   ------- THE TOTAL BAND STRUCTURE ENERGY ------- 
    
- EBS =          -100.434088 Time step =     1 SCF step =    9 SCF success! 
+ EBS =          -103.402326 Time step =     1 SCF step =    9 SCF success! 
   ----------------------------------------------- 
    
   Welcome to assemble_usrG.f! 
@@ -750,26 +800,26 @@ intra | res | intra+res dipole ( H  )=     0.0000   -0.0000   -0.0000 |    -0.00
   Solve Poisson equation
   Assemble Double Counting Correction on the Grid
  Double counting correction terms from the Grid:
- uXCdcc =     35.088486
- dVH*dn  =     -2.027174
- dVH*n0  =    -34.202347
- uHdcc  =    -36.229522
- VNA*dn =   15.4114962902837     
- VNA*n  =   188.240808818539     
- dVH*n  =  -19.1283480621514     
- UiiUee0 =  -363.419000704134     
+ uXCdcc =     34.908063
+ dVH*dn  =     -2.157661
+ dVH*n0  =    -35.213969
+ uHdcc  =    -37.371630
+ VNA*dn =   15.7039641922521     
+ VNA*n  =   189.683789523140     
+ dVH*n  =  -19.7646458078850     
+ UiiUee0 =  -358.971141966856     
   ---------- T H E  T O T A L  E N E R G Y ----------- 
-   Time step =      1 SCF step =   9 etot/atom =    -154.998041
+   Time step =      1 SCF step =   9 etot/atom =    -154.945679
    
-             ebs =     -100.434088
-       uii - uee =     -399.648522
+             ebs =     -103.402326
+       uii - uee =     -396.342772
        etotxc_1c =        0.000000
-          uxcdcc =       35.088486
-            ETOT =     -464.994124
-       Etot/atom =     -154.998041
+          uxcdcc =       34.908063
+            ETOT =     -464.837036
+       Etot/atom =     -154.945679
    Atomic Energy =        0.000000
-       CohesiveE =     -464.994124
+       CohesiveE =     -464.837036
    
-   Cohesive Energy per atom  =     -154.998041
+   Cohesive Energy per atom  =     -154.945679
   ----------------------------------------------------- 
-  FIREBALL RUNTIME :    48.0635060000000      [sec]
+  FIREBALL RUNTIME :    63.0078380000000      [sec]
