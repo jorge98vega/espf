@@ -40,6 +40,21 @@ def read_partialcharges(filename):
     return np.array(symbols), np.array(charges)
 
 
+def read_dqs(filename):
+    symbols = []
+    intradqs = []
+    resdqs = []
+    totaldqs = []
+    with open(filename) as f:
+        for line in f:
+            data = line.split()
+            symbols.append(data[7])
+            intradqs.append(-float(data[9]))
+            resdqs.append(-float(data[11]))
+            totaldqs.append(-float(data[13]))
+    return np.array(symbols), np.array(intradqs), np.array(resdqs), np.array(totaldqs)
+
+
 def read_dipoles(filename):
     symbols = []
     intradips = []
@@ -55,6 +70,15 @@ def read_dipoles(filename):
     return np.array(symbols), np.array(intradips), np.array(resdips), np.array(totaldips)
 
 
+def read_ankaisdipole(filename):
+    dipole = []
+    with open(filename) as f:
+        for line in f:
+            data = line.split()
+            dipole.append(-float(data[2]))
+    return np.array(dipole[:3])
+
+
 def read_xsf(filename):
     lvs = []
     with open(filename) as f:
@@ -67,12 +91,20 @@ def read_xsf(filename):
 
         line = f.readline()
         origin = np.array(line.split(), dtype=float)
-        
+
         for i in range(3):
             line = f.readline()
             lvs.append(np.array(line.split(), dtype=float))
 
-    data = np.genfromtxt(filename, dtype=float, skip_header=16+skip, skip_footer=2)
+    data = np.loadtxt(filename, dtype=float, skiprows=16+skip, comments='END')
     pots1d = -data
     pots3d = -data.reshape((Npoints[2], Npoints[1], Npoints[0])).transpose()
     return Npoints, origin, np.array(lvs), pots1d, pots3d
+
+
+def try_reading(read_function, filename, *args):
+    try:
+        output = read_function(filename, *args)
+    except IOError:
+        output = None
+    return output

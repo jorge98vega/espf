@@ -52,7 +52,7 @@ def compute_espcharges(Rs, rs, Vs, Q=0.0):
     # https://doi.org/10.1002/jcc.540050204
     def r(a, I):
         return np.linalg.norm(rs[a] - Rs[I])
-    
+
     def A_element(I, J):
         return np.sum(np.array([1/r(a, I)/r(a, J) for a in range(len(rs))]))*constants.ke
 
@@ -100,9 +100,21 @@ def generate_grid(Npoints, origin, lvs):
     x = np.linspace(-lvs[0][0]/2, lvs[0][0]/2, Npoints[0])
     y = np.linspace(-lvs[1][1]/2, lvs[1][1]/2, Npoints[1])
     z = np.linspace(-lvs[2][2]/2, lvs[2][2]/2, Npoints[2])
-    grid1d = np.array([[i, j, k] for k in z for j in y for i in x])
-    grid3d = (x, y, z)
+    Z, Y, X = np.meshgrid(z, y, x, indexing='ij')
+    grid1d = np.column_stack((X.ravel(), Y.ravel(), Z.ravel()))
+    grid3d = np.array((x, y, z))
     return grid1d, grid3d
+
+
+def nearest_gridpoints_espf(grid3d, pots3d, rs, volt=True):
+    dstep = grid3d[:,1] - grid3d[:,0]
+    displaced = rs - grid3d[:,0]
+    indices3d = np.unique(np.round(displaced/dstep).astype(int), axis=0)
+    gridpoints = np.take(grid3d, indices3d)
+    espf = pots3d[indices3d[:,0], indices3d[:,1], indices3d[:,2]]
+    if not volt:
+        espf = espf/constants.ke # V to e/Å
+    return gridpoints, espf
 
 
 def interpolate_espf(grid3d, pots3d, rs, volt=True, method='linear'):
@@ -110,3 +122,12 @@ def interpolate_espf(grid3d, pots3d, rs, volt=True, method='linear'):
     if not volt:
         espf = espf/constants.ke # V to e/Å
     return espf
+
+
+def espf_RMSD(espf_calculator, grid3d, pots3d, rs, method='approximate'):
+    if method == 'approximate':
+        rs, espf = nearest_gridpoints_espf(grid3d, pots3d, rs)
+    elif method == 'interpolate':
+        espf = interpolate_espf(grid3d, pots3d, rs)
+    RMSD = np.sqrt(np.sum((espf_calculator(rs) - espf)**2)/len(rs))
+    return RMSD

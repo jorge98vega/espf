@@ -6,10 +6,17 @@ import constants
 # Functions
 
 
-def dotsphere(radius, density):
+def dotsphere(radius, density=None, Npoints=None):
     # M. Deserno (2004). "How to generate equidistributed points on the surface of a sphere". https://www.cmu.edu/biolphys/deserno/pdf/sphere_equi.pdf
+    if density is not None and Npoints is not None:
+        # density = Npoints/(4*np.pi*radius**2)
+        raise Exception("density & Npoints are mutually exclusive")
+
     Ncount = 0
-    a = 1/density/radius**2
+    if density is not None:
+        a = 1/density/radius**2
+    if Npoints is not None:
+        a = 4*np.pi/Npoints
     d = np.sqrt(a)
     Mtheta = round(np.pi/d)
     dtheta = np.pi/Mtheta
@@ -26,7 +33,7 @@ def dotsphere(radius, density):
     return np.array(points)*radius
 
 
-def vdw_surface(coordinates, elements, scale_factor=1.0, density=1.0):
+def vdw_surface(coordinates, elements, scale_factor=1.0, density=1.0, Npoints=None):
     # https://github.com/rmcgibbo/pyvdwsurface
     # Compute points on the VDW surface of a molecule
     
@@ -42,6 +49,10 @@ def vdw_surface(coordinates, elements, scale_factor=1.0, density=1.0):
     # density : float
     #     The (approximate) number of points to generate per square angstrom
     #     of surface area. 1.0 is the default recommended by Kollman & Singh.
+    #     This parameter and Npoints are mutually exclusive.
+    # Npoints : integer
+    #     The (approximate) number of points to generate for each atom's VdW
+    #     surface. This parameter and density are mutually exclusive.
     if len(coordinates) != len(elements):
         print("coordinate.size does not match elements.size")
         return
@@ -59,7 +70,7 @@ def vdw_surface(coordinates, elements, scale_factor=1.0, density=1.0):
     surfacemesh = []
 
     for element in radii.keys():
-        dots = dotsphere(radii[element], density)
+        dots = dotsphere(radii[element], density, Npoints)
 
         for i, ei in enumerate(elements):
             if ei != element:
@@ -73,7 +84,7 @@ def vdw_surface(coordinates, elements, scale_factor=1.0, density=1.0):
                 d = np.linalg.norm(coordinates[i] - coordinates[j])
                 if d < (radii[ei] + radii[ej]):
                     neighbors.append((d, j, ej))
-    
+
             for dot in dotsi:
                 accessible = True
                 for neighbor in neighbors:
